@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import ClientOnly from "@/components/ClientOnly";
+import ScrollEffectsProvider from "@/components/ScrollEffectsProvider";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -39,9 +40,13 @@ export default function RootLayout({
         data-primary-color="#8c6144"
         suppressHydrationWarning={true}
       >
-        {children}
+        <ScrollEffectsProvider>{children}</ScrollEffectsProvider>
 
         {/* Scripts */}
+        <Script
+          src="/js/scroll-effects-global.js"
+          strategy="beforeInteractive"
+        />
         <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
         <Script
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
@@ -72,11 +77,11 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
 
-        <Script src="/js/clapat.js" strategy="lazyOnload" />
-        <Script src="/js/plugins.js" strategy="lazyOnload" />
-        <Script src="/js/common.js" strategy="lazyOnload" />
-        <Script src="/js/contact.js" strategy="lazyOnload" />
-        <Script src="/js/scripts.js" strategy="lazyOnload" />
+        <Script src="/js/clapat.js" strategy="afterInteractive" />
+        <Script src="/js/plugins.js" strategy="afterInteractive" />
+        <Script src="/js/common.js" strategy="afterInteractive" />
+        <Script src="/js/contact.js" strategy="afterInteractive" />
+        <Script src="/js/scripts.js" strategy="afterInteractive" />
 
         {/* Magic Cursor and other elements */}
         <ClientOnly>
