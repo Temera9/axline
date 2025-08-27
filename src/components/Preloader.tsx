@@ -4,7 +4,7 @@ import React from "react";
 
 const Preloader: React.FC = () => {
   return (
-    <div className="preloader-wrap" data-centerLine="Loading">
+    <div className="preloader-wrap" data-centerline="Loading">
       <div className="outer">
         <div className="inner">
           <div className="trackbar">

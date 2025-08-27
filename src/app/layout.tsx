@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import ClientOnly from "@/components/ClientOnly";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} hidden hidden-ball smooth-scroll1 rounded-borders`}
         data-primary-color="#8c6144"
+        suppressHydrationWarning={true}
       >
         {children}
 
@@ -77,18 +79,20 @@ export default function RootLayout({
         <Script src="/js/scripts.js" strategy="lazyOnload" />
 
         {/* Magic Cursor and other elements */}
-        <div className="cd-cover-layer"></div>
-        <div id="magic-cursor">
-          <div id="ball">
-            <div id="ball-drag-x"></div>
-            <div id="ball-drag-y"></div>
-            <div id="ball-loader"></div>
+        <ClientOnly>
+          <div className="cd-cover-layer"></div>
+          <div id="magic-cursor">
+            <div id="ball">
+              <div id="ball-drag-x"></div>
+              <div id="ball-drag-y"></div>
+              <div id="ball-loader"></div>
+            </div>
           </div>
-        </div>
-        <div id="clone-image">
-          <div className="hero-translate"></div>
-        </div>
-        <div id="rotate-device"></div>
+          <div id="clone-image">
+            <div className="hero-translate"></div>
+          </div>
+          <div id="rotate-device"></div>
+        </ClientOnly>
       </body>
     </html>
   );

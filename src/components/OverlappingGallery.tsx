@@ -69,7 +69,7 @@ const OverlappingGallery: React.FC = () => {
                 className={`overlapping-image-inner trigger-item ${
                   project.video ? "change-header" : ""
                 }`}
-                data-centerLine="OPEN"
+                data-centerline="OPEN"
               >
                 <div className="img-mask">
                   <Link
