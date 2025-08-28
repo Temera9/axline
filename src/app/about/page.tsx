@@ -35,6 +35,7 @@ export default function AboutPage() {
                       <div className="hero-subtitle caption-timeline">
                         <span>
                         WE ARE A TEAM OF YOUNG, CREATIVE, <br className="destroy" />AND COMMITTED INDIVIDUALS WHO TURN YOUR BIGGEST CHALLENGES INTO TAILORED CREATIVE SOLUTIONS.
+
                         </span>
                       </div>
                     </div>
