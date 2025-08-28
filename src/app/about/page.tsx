@@ -30,15 +30,11 @@ export default function AboutPage() {
                   >
                     <div className="inner">
                       <h1 className="hero-title caption-timeline primary-font-title">
-                        <span>Our Studio</span>
+                        <span>Our Story</span>
                       </h1>
                       <div className="hero-subtitle caption-timeline">
                         <span>
-                          WE ARE A CREATIVE STUDIO, SPECIALIZED IN STRATEGY,
-                          BRANDING <br className="destroy" />
-                          DESIGN, AND DEVELOPMENT. OUR WORK IS ALWAYS AT THE
-                          INTERSECTION <br className="destroy" />
-                          OF DESIGN AND TECHNOLOGY.
+                        WE ARE A TEAM OF YOUNG, CREATIVE, <br className="destroy" />AND COMMITTED INDIVIDUALS WHO TURN YOUR BIGGEST CHALLENGES INTO TAILORED CREATIVE SOLUTIONS.
                         </span>
                       </div>
                     </div>

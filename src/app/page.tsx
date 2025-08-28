@@ -34,15 +34,12 @@ export default function HomePage() {
                   >
                     <div className="inner">
                       <h1 className="hero-title caption-timeline primary-font-title">
-                        <span>AXline</span>
+                        <span>Axline</span>
                       </h1>
                       <div className="hero-subtitle caption-timeline">
                         <span>
-                          WE ARE A CREATIVE STUDIO, SPECIALIZED IN STRATEGY,
-                          BRANDING <br className="destroy" />
-                          DESIGN, AND DEVELOPMENT. OUR WORK IS ALWAYS AT THE
-                          INTERSECTION <br className="destroy" />
-                          OF DESIGN AND TECHNOLOGY.
+                        AXLINE STUDIO IS A COMMITTED MALAGASY CREATIVE STUDIO THAT TURNS YOUR BIGGEST <br className="destroy" />
+                          CHALLENGES INTO OPPORTUNITIES THROUGH BOUNDLESS CREATIVITY
                         </span>
                       </div>
                     </div>
@@ -121,13 +118,13 @@ export default function HomePage() {
                       <div className="list-rotator-title">OUR SKILLS COVER</div>
                       <div className="list-rotator-pin">
                         <ul className="list-rotator primary-font-title">
-                          <li>Web Design</li>
-                          <li>Mobile App Development</li>
-                          <li>UI/UX Design</li>
-                          <li>SEO Optimization</li>
-                          <li>Social Media Management</li>
-                          <li>Data Analytics</li>
-                          <li>Content Creation</li>
+                          <li>Visual Indetity & Branding</li>
+                          <li>Digital & Web design</li>
+                          <li>Print & Physical Media</li>
+                          <li>Marketing Communication</li>
+                          <li>Signage & Environmental design</li>
+                          <li>Art direction & Content Production</li>
+                          <li>Design Consulting & Strategy</li>
                         </ul>
                       </div>
                     </div>
@@ -148,8 +145,8 @@ export default function HomePage() {
                         </div>
                         <div className="box-icon-content">
                           <h6 className="no-margins">
-                            <a href="mailto:office@axline.com" className="link">
-                              <span>office@axline.com</span>
+                            <a href="mailto:hello@axline.com" className="link">
+                              <span>hello@axline.com</span>
                             </a>
                           </h6>
                           <p>Email</p>
@@ -167,7 +164,7 @@ export default function HomePage() {
                         </div>
                         <div className="box-icon-content">
                           <h6 className="no-margins">
-                            35 M Str, New York, USA
+                          Lot II U 54 PK - Andrainarivo - Antananarivo
                           </h6>
                           <p>Address</p>
                         </div>
@@ -186,7 +183,7 @@ export default function HomePage() {
                           ></i>
                         </div>
                         <div className="box-icon-content">
-                          <h6 className="no-margins">0040 (7763) 574-8901</h6>
+                          <h6 className="no-margins">+261(0)375906841 <br/> +261(0)386981485</h6>
                           <p>Phone</p>
                         </div>
                       </div>
@@ -211,7 +208,7 @@ export default function HomePage() {
                           data-centerline="ABOUT US"
                         >
                           <div className="next-hero-title primary-font-title caption-timeline">
-                            <span>Our Studio</span>
+                            <span>OUR STORY</span>
                           </div>
                         </Link>
                       </div>

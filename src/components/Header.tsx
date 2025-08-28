@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           <Link href="/" className="ajax-link" data-type="page-transition">
             <Image
               className="black-logo"
-              src="/images/logo.png"
+              src="/images/logo-axline.png"
               alt="AXline Logo"
               width={100}
               height={40}
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             />
             <Image
               className="white-logo"
-              src="/images/logo-white.png"
+              src="/images/logo-axline.png"
               alt="AXline Logo"
               width={100}
               height={40}
@@ -36,41 +36,16 @@ const Header: React.FC = () => {
             <div className="outer">
               <div className="inner">
                 <ul data-breakpoint="10025" className="flexnav">
-                  <li className="link menu-timeline">
-                    <a href="#" className="">
+                <li className="link menu-timeline">
+                    <Link
+                      href="/about"
+                      className="ajax-link"
+                      data-type="page-transition"
+                    >
                       <div className="before-span">
-                        <span data-hover="Portfolio">Portfolio</span>
+                        <span data-hover="Our World">Our World</span>
                       </div>
-                    </a>
-                    <ul>
-                      <li>
-                        <Link
-                          href="/"
-                          className="ajax-link active"
-                          data-type="page-transition"
-                        >
-                          Overlapping Gallery
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/portfolio-grid"
-                          className="ajax-link"
-                          data-type="page-transition"
-                        >
-                          Portfolio Grid
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/portfolio-gallery"
-                          className="ajax-link"
-                          data-type="page-transition"
-                        >
-                          Archive Gallery
-                        </Link>
-                      </li>
-                    </ul>
+                    </Link>
                   </li>
                   <li className="link menu-timeline">
                     <Link
@@ -79,7 +54,7 @@ const Header: React.FC = () => {
                       data-type="page-transition"
                     >
                       <div className="before-span">
-                        <span data-hover="About">About</span>
+                        <span data-hover="Our Story">Our Story</span>
                       </div>
                     </Link>
                   </li>
@@ -90,45 +65,31 @@ const Header: React.FC = () => {
                       data-type="page-transition"
                     >
                       <div className="before-span">
-                        <span data-hover="Contact">Contact</span>
+                        <span data-hover="What we create">What we create</span>
                       </div>
                     </Link>
                   </li>
                   <li className="link menu-timeline">
-                    <a href="#" className="">
+                    <Link
+                      href="/contact"
+                      className="ajax-link"
+                      data-type="page-transition"
+                    >
                       <div className="before-span">
-                        <span data-hover="More">More</span>
+                        <span data-hover="Be par of it">Be par of it</span>
                       </div>
-                    </a>
-                    <ul>
-                      <li>
-                        <Link
-                          href="/typography"
-                          className="ajax-link"
-                          data-type="page-transition"
-                        >
-                          Typography
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/multimedia"
-                          className="ajax-link"
-                          data-type="page-transition"
-                        >
-                          Multimedia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/shortcodes"
-                          className="ajax-link"
-                          data-type="page-transition"
-                        >
-                          Shortcodes
-                        </Link>
-                      </li>
-                    </ul>
+                    </Link>
+                  </li>
+                  <li className="link menu-timeline">
+                    <Link
+                      href="/contact"
+                      className="ajax-link"
+                      data-type="page-transition"
+                    >
+                      <div className="before-span">
+                        <span data-hover="Contact Us">Contact Us</span>
+                      </div>
+                    </Link>
                   </li>
                 </ul>
               </div>
